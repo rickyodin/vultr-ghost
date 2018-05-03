@@ -1,6 +1,5 @@
 #!/bin/sh
-# Testing full install of Ghost Blog for Ubuntu 16.04
-
+# Full install of Ghost Blog for Ubuntu 16.04
 cd ~
 [ -d .config ] && echo ".config dir exists, not replacing" || mkdir .config
 chown $SUDO_USER .config

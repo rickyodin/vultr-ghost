@@ -2,6 +2,8 @@
 # Testing full install of Ghost Blog for Ubuntu 16.04
 
 cd ~
+[ -d .config ] && echo ".config dir exists, not replacing" || mkdir .config
+chown $USER .config
 curl -sL https://deb.nodesource.com/setup_8.x -o nodesource_setup.sh
 bash nodesource_setup.sh
 apt-get install nodejs
